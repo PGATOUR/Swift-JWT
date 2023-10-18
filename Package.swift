@@ -31,9 +31,12 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "CryptorRSA", url: "https://github.com/Kitura/BlueRSA.git", from: "1.0.200"),
-        .package(name: "Cryptor", url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
-        .package(name: "CryptorECC", url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
+//        .package(name: "CryptorRSA", url: "https://github.com/Kitura/BlueRSA.git", from: "1.0.200"),
+//        .package(name: "Cryptor", url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
+//        .package(name: "CryptorECC", url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
+        .package(name: "Cryptor", path: "/Users/benjamintincher@pgatourhq.com/Documents/Cryptor"),
+        .package(name: "CryptorRSA", path: "/Users/benjamintincher@pgatourhq.com/Documents/CryptorRSA"),
+        .package(name: "CryptorECC", path: "/Users/benjamintincher@pgatourhq.com/Documents/CryptorECC"),
         .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
     ],
