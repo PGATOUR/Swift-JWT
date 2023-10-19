@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.9
 
 /**
  * Copyright IBM Corporation and the Kitura project authors 2018-2020
@@ -31,12 +31,19 @@ let package = Package(
         )
     ],
     dependencies: [
+        // changes were required to the three dependencies below in order to run on visionOS (same goes with this entire Swift-JWT package)
+        // forked the repos and customized.  will need to try to switch back to original sources when they get updated for visionOS
+        
+        // original sources
 //        .package(name: "CryptorRSA", url: "https://github.com/Kitura/BlueRSA.git", from: "1.0.200"),
 //        .package(name: "Cryptor", url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
 //        .package(name: "CryptorECC", url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
-        .package(name: "Cryptor", path: "/Users/benjamintincher@pgatourhq.com/Documents/Cryptor"),
-        .package(name: "CryptorRSA", path: "/Users/benjamintincher@pgatourhq.com/Documents/CryptorRSA"),
-        .package(name: "CryptorECC", path: "/Users/benjamintincher@pgatourhq.com/Documents/CryptorECC"),
+        
+        // pga tour forks
+        .package(name: "CryptorRSA", url: "https://github.com/PGATOUR/CryptorRSA", branch: "master"),
+        .package(name: "Cryptor", url: "https://github.com/PGATOUR/Cryptor", branch: "master"),
+        .package(name: "CryptorECC", url: "https://github.com/PGATOUR/CryptorECC", branch: "master"),
+        
         .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
     ],
