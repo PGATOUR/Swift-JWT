@@ -40,9 +40,9 @@ let package = Package(
 //        .package(name: "CryptorECC", url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
         
         // pga tour forks
-        .package(name: "CryptorRSA", url: "https://github.com/PGATOUR/CryptorRSA", branch: "master"),
-        .package(name: "Cryptor", url: "https://github.com/PGATOUR/Cryptor", branch: "master"),
-        .package(name: "CryptorECC", url: "https://github.com/PGATOUR/CryptorECC", branch: "master"),
+        .package(name: "CryptorRSA", url: "https://github.com/PGATOUR/CryptorRSA", from: "1.0.0"),
+        .package(name: "Cryptor", url: "https://github.com/PGATOUR/Cryptor", from: "1.0.0"),
+        .package(name: "CryptorECC", url: "https://github.com/PGATOUR/CryptorECC", from: "1.0.0"),
         
         .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
         .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
